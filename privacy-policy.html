@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Политика конфиденциальности расширения Tab Unloader">
+  <title>Tab Unloader Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f4efe6;
+      --panel: rgba(255, 252, 247, 0.9);
+      --panel-border: rgba(70, 58, 46, 0.14);
+      --text: #2a241f;
+      --muted: #6b6158;
+      --accent: #ba5b33;
+      --accent-soft: rgba(186, 91, 51, 0.12);
+      --shadow: 0 24px 60px rgba(58, 39, 22, 0.12);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(233, 198, 160, 0.7), transparent 34%),
+        radial-gradient(circle at top right, rgba(186, 91, 51, 0.18), transparent 28%),
+        linear-gradient(180deg, #fbf7f1 0%, var(--bg) 100%);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.65;
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+
+    .hero,
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--panel-border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+
+    .hero {
+      padding: 32px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -40px -40px auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(186, 91, 51, 0.18), transparent 68%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin: 0 0 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 54px);
+      line-height: 1.05;
+      max-width: 12ch;
+    }
+
+    .subtitle {
+      max-width: 62ch;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .meta span,
+    .lang-links a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 36px;
+      padding: 0 14px;
+      border-radius: 999px;
+      border: 1px solid var(--panel-border);
+      background: rgba(255, 255, 255, 0.64);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .lang-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .card {
+      padding: 28px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 30px;
+    }
+
+    h3 {
+      margin: 28px 0 10px;
+      font-size: 18px;
+    }
+
+    h3:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    code {
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: rgba(40, 33, 28, 0.08);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (min-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 20px, 920px);
+        padding-top: 18px;
+        padding-bottom: 28px;
+      }
+
+      .hero,
+      .card {
+        padding: 22px;
+        border-radius: 20px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <p class="eyebrow">Tab Unloader</p>
+      <h1>Privacy Policy</h1>
+      <p class="subtitle">
+        Политика конфиденциальности расширения Tab Unloader. Ниже размещены русская и английская версии
+        для публикации на GitHub Pages и использования в Chrome Web Store.
+      </p>
+      <div class="meta">
+        <span>Последнее обновление: 16 апреля 2026</span>
+        <span>Last updated: April 16, 2026</span>
+      </div>
+      <div class="meta lang-links">
+        <a href="#ru">Русская версия</a>
+        <a href="#en">English version</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card" id="ru">
+        <h2>Русская версия</h2>
+
+        <h3>1. Общие положения</h3>
+        <p>
+          Настоящая Политика конфиденциальности описывает, как браузерное расширение Tab Unloader
+          ("Tab Unloader", "расширение") обрабатывает данные пользователей.
+        </p>
+        <p>
+          Tab Unloader предназначено только для одной цели: управления неактивными вкладками браузера для
+          снижения потребления памяти. Расширение работает локально в браузере пользователя и не использует
+          удаленные сервисы, учетные записи или облачную синхронизацию.
+        </p>
+
+        <h3>2. Какие данные обрабатывает расширение</h3>
+        <ul>
+          <li>
+            Сведения об открытых вкладках, включая URL вкладок, заголовки вкладок и технические статусы
+            вкладок, например активна ли вкладка, закреплена ли она, воспроизводит ли звук и выгружена ли
+            она уже.
+          </li>
+          <li>
+            Пользовательские настройки, включая состояние включения расширения, время неактивности, белый
+            список исключенных доменов и счетчик выгруженных вкладок.
+          </li>
+        </ul>
+
+        <h3>3. Как используются данные</h3>
+        <ul>
+          <li>Для определения неактивных вкладок.</li>
+          <li>Для исключения активных, закрепленных, воспроизводящих звук и добавленных в белый список вкладок.</li>
+          <li>Для отображения списка вкладок в popup-окне.</li>
+          <li>Для ручной выгрузки допустимых вкладок по запросу пользователя.</li>
+          <li>Для сохранения пользовательских настроек между сеансами браузера.</li>
+        </ul>
+
+        <h3>4. Какие данные расширение не собирает</h3>
+        <ul>
+          <li>Персональные данные, позволяющие идентифицировать личность.</li>
+          <li>Финансовые и платежные данные.</li>
+          <li>Данные для аутентификации, включая пароли и PIN-коды.</li>
+          <li>Личную переписку, включая электронные письма, сообщения чатов и SMS.</li>
+          <li>Медицинскую информацию.</li>
+          <li>Точные данные о местоположении.</li>
+          <li>Содержимое веб-страниц, включая текст страниц, данные форм, изображения, аудио и видео.</li>
+          <li>Телеметрию действий пользователя, такую как клики, нажатия клавиш, движение мыши или прокрутка.</li>
+        </ul>
+
+        <h3>5. Локальная обработка и хранение</h3>
+        <p>Расширение обрабатывает связанные с вкладками данные локально на устройстве пользователя.</p>
+        <ul>
+          <li>URL вкладок, заголовки и технические статусы используются в памяти во время работы расширения.</li>
+          <li>Настройки и служебные данные хранятся локально в браузере через Chrome extension storage API.</li>
+        </ul>
+        <p>Расширение не передает пользовательские данные разработчику, третьим лицам или на внешние серверы.</p>
+
+        <h3>6. Передача и продажа данных</h3>
+        <ul>
+          <li>Tab Unloader не продает пользовательские данные.</li>
+          <li>Tab Unloader не передает пользовательские данные третьим лицам.</li>
+          <li>Tab Unloader не использует пользовательские данные для рекламы, профилирования или маркетинга.</li>
+          <li>Tab Unloader не использует удаленный код для сбора или обработки данных вне пакета расширения.</li>
+        </ul>
+
+        <h3>7. Срок хранения и удаление</h3>
+        <p>
+          Настройки и служебные данные хранятся локально в браузере до тех пор, пока пользователь не изменит
+          их или не удалит расширение, с учетом поведения браузера и локального управления данными браузера.
+        </p>
+
+        <h3>8. Соответствие требованиям Chrome Web Store</h3>
+        <p>
+          Tab Unloader обрабатывает данные, связанные с историей веб-поиска и вкладками, только в объеме,
+          необходимом для предоставления основной и явно описанной функции: управления вкладками и
+          автоматической выгрузки неактивных вкладок.
+        </p>
+        <p>
+          Использование данных ограничено предоставлением и улучшением этой основной функции и направлено на
+          соблюдение Политики пользовательских данных Chrome Web Store, включая требования Limited Use.
+        </p>
+
+        <h3>9. Контакты</h3>
+        <p>
+          Если у вас есть вопросы по поводу настоящей Политики конфиденциальности, свяжитесь с разработчиком
+          по адресу: <code>replace-with-your-email@example.com</code>
+        </p>
+      </div>
+
+      <div class="card" id="en">
+        <h2>English Version</h2>
+
+        <h3>1. Overview</h3>
+        <p>
+          This Privacy Policy describes how the Tab Unloader browser extension ("Tab Unloader", "the extension")
+          handles user data.
+        </p>
+        <p>
+          Tab Unloader is designed for one purpose only: managing inactive browser tabs to reduce memory usage.
+          The extension works locally in the user's browser and does not provide any remote service, account
+          system, or cloud synchronization.
+        </p>
+
+        <h3>2. Data the extension handles</h3>
+        <ul>
+          <li>
+            Information about open tabs, including tab URLs, tab titles, and technical tab states such as whether
+            a tab is active, pinned, audible, or already discarded.
+          </li>
+          <li>
+            User-defined settings, including whether the extension is enabled, the inactivity timeout, the whitelist
+            of excluded domains, and the discarded tab counter.
+          </li>
+        </ul>
+
+        <h3>3. How this data is used</h3>
+        <ul>
+          <li>To determine which tabs are inactive.</li>
+          <li>To avoid discarding active, pinned, audible, or excluded tabs.</li>
+          <li>To display the current tab list in the popup.</li>
+          <li>To allow the user to manually discard eligible tabs.</li>
+          <li>To save user preferences between browser sessions.</li>
+        </ul>
+
+        <h3>4. What the extension does not collect</h3>
+        <ul>
+          <li>Personally identifiable information.</li>
+          <li>Financial or payment information.</li>
+          <li>Authentication information such as passwords, credentials, or PINs.</li>
+          <li>Personal communications such as emails, chat messages, or SMS.</li>
+          <li>Health information.</li>
+          <li>Precise location data.</li>
+          <li>The contents of web pages such as page text, form entries, images, audio, or video.</li>
+          <li>User interaction telemetry such as clicks, keystrokes, mouse movement, or scrolling.</li>
+        </ul>
+
+        <h3>5. Local processing and storage</h3>
+        <p>The extension processes tab-related data locally on the device.</p>
+        <ul>
+          <li>Tab URLs, titles, and technical states are used in memory while the extension is running.</li>
+          <li>User settings and service data are stored locally in the browser using the Chrome extension storage API.</li>
+        </ul>
+        <p>The extension does not transmit user data to the developer, to third parties, or to external servers.</p>
+
+        <h3>6. Data sharing and sale</h3>
+        <ul>
+          <li>Tab Unloader does not sell user data.</li>
+          <li>Tab Unloader does not share user data with third parties.</li>
+          <li>Tab Unloader does not use user data for advertising, profiling, or marketing.</li>
+          <li>Tab Unloader does not use remote code to collect or process data outside the packaged extension.</li>
+        </ul>
+
+        <h3>7. Retention and deletion</h3>
+        <p>
+          Settings and service data remain stored locally in the browser until the user changes those settings or
+          removes the extension, subject to browser behavior and local browser data management.
+        </p>
+
+        <h3>8. Chrome Web Store compliance</h3>
+        <p>
+          Tab Unloader handles tab-related browsing data only to provide its clearly described core functionality:
+          tab management and automatic unloading of inactive tabs.
+        </p>
+        <p>
+          The extension's use of data is limited to providing and improving this core feature and is intended to
+          comply with the Chrome Web Store User Data Policy, including the Limited Use requirements.
+        </p>
+
+        <h3>9. Contact</h3>
+        <p>
+          If you have questions about this Privacy Policy, contact:
+          <code>replace-with-your-email@example.com</code>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Replace <code>replace-with-your-email@example.com</code> before publishing.
+    </footer>
+  </main>
+</body>
+</html>
