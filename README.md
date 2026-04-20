@@ -1,0 +1,2 @@
+[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-orange?style=for-the-badge&logo=googlechrome)](https://chromewebstore.google.com/detail/tab-unloader/mdggeaeeknlfoonndiggmmkjgfplengb?authuser=0&hl=ru)
+[![Firefox Add-ons](https://img.shields.io/badge/Firefox%20Add--ons-Install-orange?style=for-the-badge&logo=firefoxbrowser)](https://addons.mozilla.org/ru/firefox/addon/tab_unloader/)
